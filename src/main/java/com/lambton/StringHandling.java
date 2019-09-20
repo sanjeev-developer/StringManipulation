@@ -35,5 +35,42 @@ public class StringHandling {
         System.out.println("new"+s1.toLowerCase());
         System.out.println("new"+s1);
 
+        String name="javatpoint";
+        char ch=name.charAt(4);//returns the char value at the 4th index
+        System.out.println(ch);
+
+
+        //compare to
+        System.out.println(s1.compareTo(s2));//0 because both are equal
+        System.out.println(s1.compareTo(s3));//-5 because "h" is 5 times lower than "m"
+        System.out.println(s1.compareTo(s4));//-1 because "l" is 1 times lower than "m"
+
+        //concat function
+        s1.concat("is immutable");
+        System.out.println(s1);
+        s1=s1.concat(" is immutable so assign it explicitly");
+        System.out.println(s1);
+
+        //contain
+        String namee="what do you know about me";
+        System.out.println(namee.contains("do you know"));
+        System.out.println(namee.contains("about"));
+        System.out.println(namee.contains("hello"));
+
+
+        //end with
+        String str = "Welcome to Javatpoint.com";
+        System.out.println(str.endsWith("point"));
+        if(str.endsWith(".com")) {
+            System.out.println("String ends with .com");
+        }else System.out.println("It does not end with .com");
+
+
+        //ignorecase
+        System.out.println(s1.equalsIgnoreCase(s2));//true because content and case both are same
+        System.out.println(s1.equalsIgnoreCase(s3));//true because case is ignored
+        System.out.println(s1.equalsIgnoreCase(s4));//false because content is not same
     }
+
 }
+
