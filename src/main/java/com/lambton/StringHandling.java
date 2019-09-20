@@ -35,7 +35,7 @@ public class StringHandling {
         System.out.println("new"+s1.toLowerCase());
         System.out.println("new"+s1);
 
-        String name="javatpoint";
+        String name="sanjeev";
         char ch=name.charAt(4);//returns the char value at the 4th index
         System.out.println(ch);
 
@@ -59,17 +59,32 @@ public class StringHandling {
 
 
         //end with
-        String str = "Welcome to Javatpoint.com";
+        String str = "Welcome to helloworld";
         System.out.println(str.endsWith("point"));
-        if(str.endsWith(".com")) {
-            System.out.println("String ends with .com");
-        }else System.out.println("It does not end with .com");
+        if(str.endsWith("helloworld")) {
+            System.out.println("String ends with helloworld");
+        }else System.out.println("It does not end with helloworld");
 
 
         //ignorecase
         System.out.println(s1.equalsIgnoreCase(s2));//true because content and case both are same
         System.out.println(s1.equalsIgnoreCase(s3));//true because case is ignored
         System.out.println(s1.equalsIgnoreCase(s4));//false because content is not same
+
+        //replace
+        String replacefun="sanjeev is a very good boy";
+        String replaceString=replacefun.replace('a','e');//replaces all occurrences of 'a' to 'e'
+        System.out.println(replaceString);
+
+        //sunstring function
+        String subfun="sanjeev";
+        System.out.println(subfun.substring(2,4));//returns va
+        System.out.println(subfun.substring(2));//returns vatpoint
+
+        //index of
+        int index1=subfun.indexOf("sa");//returns the index of is substring
+        int index2=subfun.indexOf("ev");//returns the index of index substring
+        System.out.println(index1+"  "+index2);//2 8
     }
 
 }
